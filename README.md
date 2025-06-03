@@ -1,4 +1,3 @@
-
 # Playwright Login Flow Test Automation
 
 ## Overview
@@ -9,7 +8,7 @@ and handle negative login scenarios with invalid credentials.
 
 During the assessment, it is assumed that the application is developed and working as expected.  
 For example, navigation buttons are clickable but do not redirect anywhere yet, so it is assumed that  
-the redirection functionality will be implemented in future sprints.  
+the redirection functionality will be implemented in future sprints.
 
 Similarly, for invalid credentials, it would be better to show an error message like "Login or password is not correct,"  
 but this is also considered a potential enhancement for upcoming sprints.
@@ -39,6 +38,7 @@ but this is also considered a potential enhancement for upcoming sprints.
   └── notValidUsers.json      # Invalid user credentials
 /playwright.config.js         # Playwright config including baseURL, webServer, and reporter setup
 ```
+
 ---
 
 ## Running Tests
@@ -59,4 +59,4 @@ npx playwright test
 
 ```bash
 npx playwright show-report
-```s
+```
