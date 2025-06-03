@@ -1,6 +1,7 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
+  reporter: [['list'], ['html']],
   use: {
     headless: false,
     baseURL: 'http://localhost:3000',
@@ -10,5 +11,6 @@ module.exports = defineConfig({
     command: 'npx http-server . -p 3000',
     port: 3000,
     timeout: 120 * 1000, // 2 minutes
+    reuseExistingServer: true,
   },
 });

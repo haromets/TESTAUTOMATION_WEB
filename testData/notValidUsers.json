@@ -1,0 +1,6 @@
+[
+    { "email": "pavel@admin.com", "password": "2020" },
+    { "email": "admin@", "password": "2020" },
+    { "email": "", "password": "123456" },
+    { "email": "growdev@growdev.com.br", "password": "" }
+]
