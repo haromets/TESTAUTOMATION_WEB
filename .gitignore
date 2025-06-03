@@ -1,4 +1,4 @@
 # Ignore Playwright test report and results folders
+node_modules/
 playwright-report/
 test-results/
-node_modules/

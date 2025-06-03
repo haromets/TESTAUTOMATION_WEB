@@ -55,6 +55,14 @@ npm install
 npx playwright test
 ```
 
+Note: On some business laptops (e.g., ABN AMRO-managed devices), running all tests together using npx playwright test may cause performance issues, particularly due to the local server process being resource-intensive.
+If you experience lag or instability, it is recommended to execute specific test cases individually using the --grep option to run targeted tests.
+Example:
+
+```bash
+npx playwright test --grep "should have correct background image after login"
+```
+
 3. Open HTML report after test completion:
 
 ```bash
