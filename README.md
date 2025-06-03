@@ -28,6 +28,7 @@ but this is also considered a potential enhancement for upcoming sprints.
 
 ## Project Structure
 
+```
 /tests
   ├── loginFlow.spec.js       # Main test suite with modular tests and data-driven loops
   └── e2e.spec.js             # End-to-end login and logout flow tests
@@ -37,19 +38,25 @@ but this is also considered a potential enhancement for upcoming sprints.
   ├── validUsers.json         # Valid user credentials
   └── notValidUsers.json      # Invalid user credentials
 /playwright.config.js         # Playwright config including baseURL, webServer, and reporter setup
-
+```
 ---
 
 ## Running Tests
 
 1. Install dependencies:
 
+```bash
 npm install
+```
 
 2. Run tests with the local server started automatically:
 
+```bash
 npx playwright test
+```
 
 3. Open HTML report after test completion:
 
+```bash
 npx playwright show-report
+```s
