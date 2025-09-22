@@ -1,9 +1,9 @@
 const { defineConfig } = require('@playwright/test');
 
 module.exports = defineConfig({
-  reporter: [['list'], ['html']],
+  reporter: [['list'], ['html'], ['github']],
   use: {
-    headless: false,
+    headless: true,
     baseURL: 'http://localhost:3000',
     trace: 'on',
   },
